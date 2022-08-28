@@ -1,0 +1,40 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+strong {
+  color: crimson
+}
+
+.button, a {
+  display: inline-block;
+  padding: 0 20px;
+  color: crimson;
+  letter-spacing: 0.1em;
+  line-height: 2.6;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+    text-decoration: none;
+  }
+}
+
+.button {
+  background-color: crimson;
+  color: white;
+  border-radius: 16px;
+  border: 1px solid crimson;
+  text-decoration: none;
+}
